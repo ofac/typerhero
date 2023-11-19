@@ -117,7 +117,9 @@ main#typerhero nav.menu ul li a:is(:hover) i {
 
 main#typerhero div.stage02.hide,
 main#typerhero div.stage03.hide,
-main#typerhero div.stage04.hide {
+main#typerhero div.stage04.hide,
+main#typerhero div.stage30.hide,
+main#typerhero div.stage31.hide {
    display: none;
 }
 
@@ -143,6 +145,12 @@ main#typerhero div.title-stats {
 }
 main#typerhero div.title-credits {
    background: url(../images/title-credits.png) no-repeat center;
+}
+main#typerhero div.title-about {
+   background: url(../images/title-about.png) no-repeat center;
+}
+main#typerhero div.title-team {
+   background: url(../images/title-team.png) no-repeat center;
 }
 
 main#typerhero nav.menu ul li.opt10 {
@@ -192,6 +200,74 @@ main#typerhero nav.menu ul li.opt31 a i {
    background: url(../images/ico-team.svg);
 }
 
-main#typerhero nav.menu ul li.back-index a i {
+main#typerhero nav.menu ul li.back-index a i,
+main#typerhero nav.menu ul li.back-menu a i {
    background: url(../images/ico-back.svg);
+}
+
+
+
+main#typerhero .stage30 nav.menu,
+main#typerhero .stage31 nav.menu {
+   top: 780px;
+}
+
+main#typerhero section {
+   border-radius: 10px;
+   height: 380px;
+   padding: 10px 20px;
+   position: absolute;
+   margin: 0 auto;
+   left: 50%;
+   top: 354px;
+   transform: translateX(-50%);
+   width: 340px;
+}
+
+main#typerhero section h4 {
+   text-transform: uppercase;
+   margin: 0;
+   margin-top: 20px;
+}
+
+main#typerhero section p {
+   font-weight: 100;
+   text-align: justify;
+}
+
+main#typerhero section.sec-about  {
+   color: #fff;
+   background-color: #00000066;
+}
+
+main#typerhero section.sec-team  {
+   color: #fff;
+}
+
+main#typerhero section.sec-team article  {
+   border-radius: 10px;
+   display: flex;
+   margin-bottom: 12px;
+   align-items: center;
+   height: 80px;
+   gap: 0.8rem;
+}
+
+main#typerhero section.sec-team article img  {
+   margin-left: 10px;
+   height: 60px;
+   width: 60px;
+}
+
+main#typerhero section.sec-team article p strong  {
+   font-size: 0.9rem;
+   font-weight: 400;
+}
+
+main#typerhero section.sec-team article:nth-child(odd)  {
+   background-color: #ffffff66;
+}
+
+main#typerhero section.sec-team article:nth-child(even)  {
+   background-color: #ffffff33;
 }

@@ -27,6 +27,23 @@ $(document).ready(function () {
                                  .addClass('animate__fadeInUp')
                 }, 200)
                 break;
+            case 'opt30':
+                    $('.stage04').removeClass('animate__fadeInUp')
+                                 .addClass('animate__fadeOutDown')
+                    setTimeout(() => {
+                        $('.stage30').removeClass('hide')
+                                     .addClass('animate__fadeInUp')
+                    }, 200)
+                    break;
+            case 'opt31':
+                        $('.stage04').removeClass('animate__fadeInUp')
+                                     .addClass('animate__fadeOutDown')
+                        setTimeout(() => {
+                            $('.stage31').removeClass('hide')
+                                         .addClass('animate__fadeInUp')
+                        }, 200)
+                        break;
+
             
             case 'back-index':
                 $('.stage02').removeClass('animate__fadeInUp')
@@ -49,6 +66,25 @@ $(document).ready(function () {
                 }, 400)
                 setTimeout(() => {
                     $('.stage04').removeClass('animate__fadeOutDown')
+                                 .addClass('hide')
+                }, 400)
+                break;
+
+            case 'back-menu':
+                $('.stage30').removeClass('animate__fadeInUp')
+                             .addClass('animate__fadeOutDown')
+                $('.stage31').removeClass('animate__fadeInUp')
+                             .addClass('animate__fadeOutDown')
+                setTimeout(() => {
+                    $('.stage04').removeClass('animate__fadeOutDown')
+                                    .addClass('animate__fadeInUp')
+                }, 200)
+                setTimeout(() => {
+                    $('.stage30').removeClass('animate__fadeOutDown')
+                                 .addClass('hide')
+                }, 400)
+                setTimeout(() => {
+                    $('.stage31').removeClass('animate__fadeOutDown')
                                  .addClass('hide')
                 }, 400)
                 break;
