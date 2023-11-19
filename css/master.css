@@ -12,104 +12,186 @@ main#typerhero {
 }
 
 main#typerhero div {
-    height: 2048px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+   height: 2048px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
 }
 
- main#typerhero div.stars-lg {
-    background: url(../images/stars-lg.png) repeat-y 0px -1024px /contain;
-    animation: 10s parallax linear infinite;
- }
+main#typerhero div.stars-lg {
+   background: url(../images/stars-lg.png) repeat-y 0px -1024px /contain;
+   animation: 10s parallax linear infinite;
+}
 
-  main#typerhero div.stars-md {
-    background: url(../images/stars-md.png) repeat-y 0px -1024px /contain;
-    animation: 20s parallax linear infinite;
- }
+main#typerhero div.stars-md {
+   background: url(../images/stars-md.png) repeat-y 0px -1024px /contain;
+   animation: 20s parallax linear infinite;
+}
 
-  main#typerhero div.stars-sm {
-    background: url(../images/stars-sm.png) repeat-y 0px -1024px /contain;
-    animation: 30s parallax linear infinite;
- }
+main#typerhero div.stars-sm {
+   background: url(../images/stars-sm.png) repeat-y 0px -1024px /contain;
+   animation: 30s parallax linear infinite;
+}
 
- @keyframes parallax {
-    0% { background-position: 0px -2048px; }
-    100% { background-position: 0px 0px;    }
- }
+@keyframes parallaxXYZ {
+   0% { background-position: 0px -2048px; }
+   100% { background-position: 0px 0px;    }
+}
 
- main#typerhero div.logo {
-     background: url(../images/logo.png) no-repeat center;
-     height: 426px;
-     top: -80px;
-     left: 50%;
-     transform: translateX(-50%);
-     width: 408px;
- }
+main#typerhero div.logo {
+   background: url(../images/logo.png) no-repeat center;
+   height: 426px;
+   top: -80px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 408px;
+}
 
- main#typerhero nav.menu {
-    margin: 0 auto;
-    position: absolute;
-    top: 380px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 360px;
- }
+main#typerhero nav.menu {
+   margin: 0 auto;
+   position: absolute;
+   top: 380px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 360px;
+}
 
- main#typerhero nav.menu ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    gap: 1.4rem;
- }
+main#typerhero nav.menu ul {
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   padding: 0;
+   margin: 0;
+   gap: 1.4rem;
+}
 
-  main#typerhero nav.menu ul li {
-    display: flex;
-    gap: 12px;
-  }
+main#typerhero nav.menu ul li {
+   display: flex;
+   gap: 12px;
+}
 
-  main#typerhero nav.menu ul li a i {
-    height: 60px;
-    opacity: 0.6;
-    transition: opacity 0.4s ease-out;
-    width: 60px;
-  }
+main#typerhero nav.menu ul li a i {
+   height: 60px;
+   opacity: 0.6;
+   transition: opacity 0.4s ease-out;
+   width: 60px;
+}
 
-  main#typerhero nav.menu ul li.opt1 a i {
+main#typerhero nav.menu ul li.opt1 a i {
    background: url(../images/ico-opt1.svg);
-  }
+}
 
-  main#typerhero nav.menu ul li.opt2 a i {
+main#typerhero nav.menu ul li.opt2 a i {
    background: url(../images/ico-opt2.svg);
-  }
+}
 
-  main#typerhero nav.menu ul li.opt3 a i {
+main#typerhero nav.menu ul li.opt3 a i {
    background: url(../images/ico-opt3.svg);
-  }
+}
 
- main#typerhero nav.menu ul li a:is(:link, :visited) {
-    color: #fff;
-    background-color: #165873;
-    border-radius: 3rem;
-    font-weight: medium;
-    font-size: 24px;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 0.4rem;
-    transition: transform 0.2s ease-in;
-    width: 360px;
- }
+main#typerhero nav.menu ul li a:is(:link, :visited) {
+   color: #fff;
+   background-color: #165873;
+   border-radius: 3rem;
+   font-weight: medium;
+   font-size: 24px;
+   display: flex;
+   gap: 1rem;
+   align-items: center;
+   text-decoration: none;
+   text-transform: uppercase;
+   padding: 0.4rem;
+   transition: transform 0.2s ease-in;
+   width: 360px;
+}
 
-  main#typerhero nav.menu ul li a:is(:hover) {
-    transform: scale(1.05);
-  }
+main#typerhero nav.menu ul li a:is(:hover) {
+   transform: scale(1.05);
+}
 
-  main#typerhero nav.menu ul li a:is(:hover) i {
-    opacity: 1;
-  }
+main#typerhero nav.menu ul li a:is(:hover) i {
+   opacity: 1;
+}
+
+
+main#typerhero div.stage02.hide,
+main#typerhero div.stage03.hide,
+main#typerhero div.stage04.hide {
+   display: none;
+}
+
+main#typerhero div.logo-top {
+   background: url(../images/logo-top.png) no-repeat center;
+   height: 257px;
+   top: 0px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 246px;
+}
+
+main#typerhero div.title {
+   height: 60px;
+   top: 280px;
+}
+
+main#typerhero div.title-play {
+   background: url(../images/title-play.png) no-repeat center;
+}
+main#typerhero div.title-stats {
+   background: url(../images/title-stats.png) no-repeat center;
+}
+main#typerhero div.title-credits {
+   background: url(../images/title-credits.png) no-repeat center;
+}
+
+main#typerhero nav.menu ul li.opt10 {
+   flex-direction: column;
+}
+
+main#typerhero nav.menu ul li input {
+   border-radius: 100px;
+   border: 2px solid #088F82;
+   background: rgba(0, 0, 0, 0.40);
+   color: #fff;
+   height: 70px;
+   text-transform: uppercase;
+   text-indent: 1rem;
+   font-size: 1.4rem;
+   outline: none;
+}
+
+main#typerhero nav.menu ul li p {
+   color: #fff;
+   font-weight: 400;
+   text-align: center;
+   font-size: 0.9rem;
+}
+
+main#typerhero nav.menu ul li.opt11 a:is(:link, :visited) {
+   background-color: #088f82;
+}
+
+main#typerhero nav.menu ul li.opt11 a i {
+   background: url(../images/ico-play.svg);
+}
+
+main#typerhero nav.menu ul li.opt20 a i {
+   background: url(../images/ico-results.svg);
+}
+
+main#typerhero nav.menu ul li.opt21 a i {
+   background: url(../images/ico-progress.svg);
+}
+
+main#typerhero nav.menu ul li.opt30 a i {
+   background: url(../images/ico-about.svg);
+}
+
+main#typerhero nav.menu ul li.opt31 a i {
+   background: url(../images/ico-team.svg);
+}
+
+main#typerhero nav.menu ul li.back-index a i {
+   background: url(../images/ico-back.svg);
+}

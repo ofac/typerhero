@@ -12,6 +12,7 @@
         <div class="stars-sm"></div>
         <div class="stars-md"></div>
         <div class="stars-lg"></div>
+        <!-- Stage 01 (Index) -->
         <div class="stage01 animate__animated animate__fadeInUp">
             <div class="logo"></div>
             <nav class="menu">
@@ -28,18 +29,66 @@
                 </ul>
             </nav>
         </div>
+        <!-- Stage 02 (Play) -->
+        <div class="stage02 animate__animated hide">
+            <div class="logo-top"></div>
+            <div class="title title-play"></div>
+            <nav class="menu">
+                <ul>
+                    <li class="opt10">
+                        <p>Por favor ingresar un nombre de jugador sin espacios</p>
+                        <input type="text" placeholder="Nombre Jugador">
+                    </li>
+                    <li class="opt11">
+                        <a href="javascript:;"><i></i> Comenzar</a>
+                    </li>
+                    <li class="back-index">
+                        <a href="javascript:;"><i></i> Regresar</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Stage 03 (Statistics) -->
+        <div class="stage03 animate__animated hide">
+            <div class="logo-top"></div>
+            <div class="title title-stats"></div>
+            <nav class="menu">
+                <ul>
+                    <li class="opt20">
+                        <a href="javascript:;"><i></i> Mis Resultados</a>
+                    </li>
+                    <li class="opt21">
+                        <a href="javascript:;"><i></i> Progreso</a>
+                    </li>
+                    <li class="back-index">
+                        <a href="javascript:;"><i></i> Regresar</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Stage 04 (Credits) -->
+        <div class="stage04 animate__animated hide">
+            <div class="logo-top"></div>
+            <div class="title title-credits"></div>
+            <nav class="menu">
+                <ul>
+                    <li class="opt30">
+                        <a href="javascript:;"><i></i> Acerca de...</a>
+                    </li>
+                    <li class="opt31">
+                        <a href="javascript:;"><i></i> Equipo</a>
+                    </li>
+                    <li class="back-index">
+                        <a href="javascript:;"><i></i> Regresar</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Stage 05 (XYZ) -->
+
     </main>
 
     <script src="js/jquery-3.7.1.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.menu a').click(function (e) { 
-                e.preventDefault()
-                $opt = $(this).parent().attr('class')
-                $('.stage01').removeClass('animate__fadeInUp')
-                             .addClass('animate__fadeOutDown')
-            })
-        })
-    </script>
+    <script src="js/app.js"></script>
 </body>
 </html>
