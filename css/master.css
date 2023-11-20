@@ -365,6 +365,25 @@ main#typerhero section.sec-play .bg {
    background: linear-gradient(#04af71, #04af7133);
 }
 
+main#typerhero section.sec-play .laser {
+   background-color: #04af71;
+   border-radius: 20px;
+   height: 10px;
+   top: 286px;
+   opacity: 0;
+   left: 200px;
+   width: 10px;
+}
+
+main#typerhero section.sec-play .laser.shoot {
+   animation: 0.2s animShoot ease-in 1;
+}
+
+@keyframes animShoot {
+   0% {   top: 286px; opacity: 0; }
+   100% { top: 206px; opacity: 1; }
+}
+
 
 main#typerhero section.sec-play .wordsWrap {
    display: flex;
