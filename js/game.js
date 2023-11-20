@@ -6,7 +6,7 @@ var points = 0;
 var spans;
 var typed;
 var seconds = 60;
-//var spark = new Audio("music/spark.mp3");
+var spark = new Audio("../sounds/explosion-small.mp3");
 var timer = null;
 
  	function countdown() {
@@ -306,9 +306,9 @@ var timer = null;
   					checker++;
   				}
   				if (checker === spans.length) { // if so, animate the words with animate.css class
-            //spark.pause();
-					  //spark.currentTime = 0;
-            //spark.play();
+            spark.pause();
+					  spark.currentTime = 0;
+            spark.play();
   					words.classList.add("animated");
   					words.classList.add("fadeOut");
   					points++; // increment the points
