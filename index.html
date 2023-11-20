@@ -84,6 +84,88 @@
                 </ul>
             </nav>
         </div>
+        <!-- Stage 20 (Results) -->
+        <div class="stage20 animate__animated hide">
+            <div class="logo-top"></div>
+            <div class="title title-results"></div>
+            <section class="sec-results">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>POS</th>
+                            <th>FECHA</th>
+                            <th>WPM</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>20/11/2023</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>20/11/2023</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>15/11/2023</td>
+                            <td>56</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>15/11/2023</td>
+                            <td>52</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>10/11/2023</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>10/11/2023</td>
+                            <td>46</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td> --/--/---- </td>
+                            <td> -- </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td> --/--/---- </td>
+                            <td> -- </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <nav class="menu">
+                <ul>
+                    <li class="back-menu">
+                        <a href="javascript:;"><i></i> Regresar</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Stage 21 (Progress) -->
+        <div class="stage21 animate__animated hide">
+            <div class="logo-top"></div>
+            <div class="title title-progress"></div>
+            <section class="sec-progress">
+                <div>
+                    <canvas id="myChart"></canvas>
+                  </div>
+            </section>
+            <nav class="menu">
+                <ul>
+                    <li class="back-menu">
+                        <a href="javascript:;"><i></i> Regresar</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <!-- Stage 30 (About) -->
         <div class="stage30 animate__animated hide">
             <div class="logo-top"></div>
@@ -161,6 +243,32 @@
     </main>
 
     <script src="js/jquery-3.7.1.min.js"></script>
+
     <script src="js/app.js"></script>
+    <script src="js/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('myChart');
+        new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['10/11/23', '10/11/23', '15/11/23', '15/11/23', '20/11/23', '20/11/23'],
+            datasets: [{
+            label: 'PPM',
+            data: [46, 50, 52, 56, 60, 64],
+            borderWidth: 2,
+            pointStyle: 'circle',
+            pointRadius: 4,
+            pointHoverRadius: 6
+            }]
+        },
+        options: {
+            scales: {
+            y: {
+                beginAtZero: true
+            }
+            }
+        }
+        });
+    </script>
 </body>
 </html>

@@ -118,6 +118,8 @@ main#typerhero nav.menu ul li a:is(:hover) i {
 main#typerhero div.stage02.hide,
 main#typerhero div.stage03.hide,
 main#typerhero div.stage04.hide,
+main#typerhero div.stage20.hide,
+main#typerhero div.stage21.hide,
 main#typerhero div.stage30.hide,
 main#typerhero div.stage31.hide {
    display: none;
@@ -145,6 +147,12 @@ main#typerhero div.title-stats {
 }
 main#typerhero div.title-credits {
    background: url(../images/title-credits.png) no-repeat center;
+}
+main#typerhero div.title-results {
+   background: url(../images/title-results.png) no-repeat center;
+}
+main#typerhero div.title-progress {
+   background: url(../images/title-progress.png) no-repeat center;
 }
 main#typerhero div.title-about {
    background: url(../images/title-about.png) no-repeat center;
@@ -207,6 +215,8 @@ main#typerhero nav.menu ul li.back-menu a i {
 
 
 
+main#typerhero .stage20 nav.menu,
+main#typerhero .stage21 nav.menu,
 main#typerhero .stage30 nav.menu,
 main#typerhero .stage31 nav.menu {
    top: 780px;
@@ -270,4 +280,52 @@ main#typerhero section.sec-team article:nth-child(odd)  {
 
 main#typerhero section.sec-team article:nth-child(even)  {
    background-color: #ffffff33;
+}
+
+main#typerhero section.sec-results table  {
+   background-color: #ffffff33;
+   border-collapse: collapse;
+   border-radius: 10px;
+   color: #fff;
+   width: 100%;
+}
+
+main#typerhero section.sec-results table th,
+main#typerhero section.sec-results table td {
+   padding: 12px 10px;
+   text-align: center;
+}
+
+main#typerhero section.sec-results table thead th:first-of-type {
+   border-radius: 10px 0 0 0;
+}
+
+main#typerhero section.sec-results table thead th:last-of-type {
+   border-radius: 0 10px 0 0;
+}
+
+main#typerhero section.sec-results table tbody tr:last-of-type td:first-of-type {
+   border-radius: 0 0 0 10px;
+}
+
+main#typerhero section.sec-results table tbody tr:last-of-type td:last-of-type {
+   border-radius: 0 0 10px 0;
+}
+
+main#typerhero section.sec-results table th {
+   background-color: #fff;
+   color: #000;
+}
+
+main#typerhero section.sec-results table tr:nth-child(even) {
+   background-color: #ffffff66;
+}
+
+main#typerhero section.sec-progress {
+   background-color: #00000066;
+   border-radius: 10px;
+}
+
+main#typerhero section.sec-progress canvas {
+   margin-top: 6rem;
 }

@@ -27,6 +27,22 @@ $(document).ready(function () {
                                  .addClass('animate__fadeInUp')
                 }, 200)
                 break;
+            case 'opt20':
+                    $('.stage03').removeClass('animate__fadeInUp')
+                                 .addClass('animate__fadeOutDown')
+                    setTimeout(() => {
+                        $('.stage20').removeClass('hide')
+                                     .addClass('animate__fadeInUp')
+                    }, 200)
+                    break;
+            case 'opt21':
+                    $('.stage03').removeClass('animate__fadeInUp')
+                                    .addClass('animate__fadeOutDown')
+                    setTimeout(() => {
+                        $('.stage21').removeClass('hide')
+                                        .addClass('animate__fadeInUp')
+                    }, 200)
+                    break;
             case 'opt30':
                     $('.stage04').removeClass('animate__fadeInUp')
                                  .addClass('animate__fadeOutDown')
@@ -71,14 +87,30 @@ $(document).ready(function () {
                 break;
 
             case 'back-menu':
+                $('.stage20').removeClass('animate__fadeInUp')
+                             .addClass('animate__fadeOutDown')
+                $('.stage21').removeClass('animate__fadeInUp')
+                             .addClass('animate__fadeOutDown')
                 $('.stage30').removeClass('animate__fadeInUp')
                              .addClass('animate__fadeOutDown')
                 $('.stage31').removeClass('animate__fadeInUp')
                              .addClass('animate__fadeOutDown')
                 setTimeout(() => {
+                    $('.stage03').removeClass('animate__fadeOutDown')
+                                    .addClass('animate__fadeInUp')
+                }, 200)
+                setTimeout(() => {
                     $('.stage04').removeClass('animate__fadeOutDown')
                                     .addClass('animate__fadeInUp')
                 }, 200)
+                setTimeout(() => {
+                    $('.stage20').removeClass('animate__fadeOutDown')
+                                 .addClass('hide')
+                }, 400)
+                setTimeout(() => {
+                    $('.stage21').removeClass('animate__fadeOutDown')
+                                 .addClass('hide')
+                }, 400)
                 setTimeout(() => {
                     $('.stage30').removeClass('animate__fadeOutDown')
                                  .addClass('hide')
