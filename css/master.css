@@ -220,9 +220,12 @@ main#typerhero nav.menu ul li.back-exit a i {
 main#typerhero .stage20 nav.menu,
 main#typerhero .stage21 nav.menu,
 main#typerhero .stage30 nav.menu,
-main#typerhero .stage31 nav.menu,
-main#typerhero .stage-play nav.menu {
+main#typerhero .stage31 nav.menu {
    top: 780px;
+}
+
+main#typerhero .stage-play nav.menu {
+   top: 700px;
 }
 
 main#typerhero section {
@@ -342,6 +345,7 @@ main#typerhero div div.wrapper  {
 
 main#typerhero section.sec-play {
    color: #fff;
+   top: 280px;
    background-color: #00000066;
 }
 
@@ -376,7 +380,7 @@ main#typerhero section.sec-play .laser {
 }
 
 main#typerhero section.sec-play .laser.shoot {
-   animation: 0.2s animShoot ease-in 1;
+   animation: 0.4s animShoot ease-in 1;
 }
 
 @keyframes animShoot {
@@ -389,7 +393,7 @@ main#typerhero section.sec-play .wordsWrap {
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-top: 80px;
+   margin-top: 60px;
 }
 
 main#typerhero section.sec-play .words span{

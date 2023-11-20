@@ -296,7 +296,7 @@ var laser = document.querySelector('.laser');
               laser.classList.add('shoot');
               setTimeout(() => {
                 laser.classList.remove('shoot');
-              }, 200);
+              }, 450);
   						break;
   					}
   				}
