@@ -34,7 +34,7 @@ main#typerhero div.stars-sm {
    animation: 30s parallax linear infinite;
 }
 
-@keyframes parallaxXYZ {
+@keyframes parallax {
    0% { background-position: 0px -2048px; }
    100% { background-position: 0px 0px;    }
 }
