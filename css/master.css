@@ -121,7 +121,8 @@ main#typerhero div.stage04.hide,
 main#typerhero div.stage20.hide,
 main#typerhero div.stage21.hide,
 main#typerhero div.stage30.hide,
-main#typerhero div.stage31.hide {
+main#typerhero div.stage31.hide,
+main#typerhero div.stage-play.hide {
    display: none;
 }
 
@@ -209,7 +210,8 @@ main#typerhero nav.menu ul li.opt31 a i {
 }
 
 main#typerhero nav.menu ul li.back-index a i,
-main#typerhero nav.menu ul li.back-menu a i {
+main#typerhero nav.menu ul li.back-menu a i,
+main#typerhero nav.menu ul li.back-exit a i {
    background: url(../images/ico-back.svg);
 }
 
@@ -218,7 +220,8 @@ main#typerhero nav.menu ul li.back-menu a i {
 main#typerhero .stage20 nav.menu,
 main#typerhero .stage21 nav.menu,
 main#typerhero .stage30 nav.menu,
-main#typerhero .stage31 nav.menu {
+main#typerhero .stage31 nav.menu,
+main#typerhero .stage-play nav.menu {
    top: 780px;
 }
 
@@ -328,4 +331,52 @@ main#typerhero section.sec-progress {
 
 main#typerhero section.sec-progress canvas {
    margin-top: 6rem;
+}
+
+
+
+main#typerhero div div.wrapper  {
+   pointer-events: all;
+   z-index: 99999;
+}
+
+
+main#typerhero section.sec-play {
+   color: #fff;
+   background-color: #00000066;
+}
+
+main#typerhero section.sec-play article.info {
+   display: flex;
+   justify-content: space-between;
+}
+
+main#typerhero section.sec-play article.info aside {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+
+main#typerhero section.sec-play article.info aside span {
+   font-weight: 100;
+}
+
+main#typerhero section.sec-play .bg {
+	background-color: #04af71;
+}
+
+
+main#typerhero section.sec-play .wordsWrap {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 80px;
+}
+
+main#typerhero section.sec-play .words span{
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
 }

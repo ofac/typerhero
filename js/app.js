@@ -27,6 +27,16 @@ $(document).ready(function () {
                                  .addClass('animate__fadeInUp')
                 }, 200)
                 break;
+            case 'opt11':
+                    $('.stage02').removeClass('animate__fadeInUp')
+                                 .addClass('animate__fadeOutDown')
+                    setTimeout(() => {
+                        countdown();
+  		                random();
+                        $('.stage-play').removeClass('hide')
+                                        .addClass('animate__fadeInUp')
+                    }, 200)
+                    break;
             case 'opt20':
                     $('.stage03').removeClass('animate__fadeInUp')
                                  .addClass('animate__fadeOutDown')
@@ -117,6 +127,28 @@ $(document).ready(function () {
                 }, 400)
                 setTimeout(() => {
                     $('.stage31').removeClass('animate__fadeOutDown')
+                                 .addClass('hide')
+                }, 400)
+                break;
+
+            case 'back-exit':
+                scoreDiv.innerHTML = "0"
+                words.innerHTML = ""
+                clearInterval(timer)
+                seconds = 60
+                timerDiv.innerHTML = "60"
+                $('.stage-play').removeClass('animate__fadeInUp')
+                                .addClass('animate__fadeOutDown')
+                setTimeout(() => {
+                $('.stage01').removeClass('animate__fadeOutDown')
+                             .addClass('animate__fadeInUp')
+                }, 200)
+                setTimeout(() => {
+                    $('.stage-play').removeClass('animate__fadeOutDown')
+                                    .addClass('hide')
+                }, 400)
+                setTimeout(() => {
+                    $('.stage02').removeClass('animate__fadeOutDown')
                                  .addClass('hide')
                 }, 400)
                 break;

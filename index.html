@@ -84,6 +84,32 @@
                 </ul>
             </nav>
         </div>
+        <!-- Stage (Play) -->
+        <div class="stage-play animate__animated hide">
+            <div class="logo-top"></div>
+            <section class="sec-play">                        
+                <article class="info">
+                    <aside>
+                        <h4>Palabras</h4>
+                        <span class="score">0</span>
+                    </aside>
+                    <aside>
+                        <h4>Tiempo</h4>
+                        <span class="time">60</span>
+                    </aside>
+                </article>
+                <article class="wordsWrap">
+                    <p class="words"></p>
+                </article>
+            </section>
+            <nav class="menu">
+                <ul>
+                    <li class="back-exit">
+                        <a href="javascript:;"><i></i> Salir</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <!-- Stage 20 (Results) -->
         <div class="stage20 animate__animated hide">
             <div class="logo-top"></div>
@@ -116,17 +142,17 @@
                         <tr>
                             <td>4</td>
                             <td>15/11/2023</td>
-                            <td>52</td>
+                            <td>32</td>
                         </tr>
                         <tr>
                             <td>5</td>
                             <td>10/11/2023</td>
-                            <td>50</td>
+                            <td>20</td>
                         </tr>
                         <tr>
                             <td>6</td>
                             <td>10/11/2023</td>
-                            <td>46</td>
+                            <td>10</td>
                         </tr>
                         <tr>
                             <td>7</td>
@@ -244,6 +270,7 @@
 
     <script src="js/jquery-3.7.1.min.js"></script>
 
+    <script src="js/game.js"></script>
     <script src="js/app.js"></script>
     <script src="js/chart.js"></script>
     <script>
@@ -254,7 +281,7 @@
             labels: ['10/11/23', '10/11/23', '15/11/23', '15/11/23', '20/11/23', '20/11/23'],
             datasets: [{
             label: 'PPM',
-            data: [46, 50, 52, 56, 60, 64],
+            data: [10, 20, 32, 56, 60, 64],
             borderWidth: 2,
             pointStyle: 'circle',
             pointRadius: 4,
