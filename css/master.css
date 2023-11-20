@@ -340,7 +340,6 @@ main#typerhero div div.wrapper  {
    z-index: 99999;
 }
 
-
 main#typerhero section.sec-play {
    color: #fff;
    background-color: #00000066;
@@ -363,7 +362,7 @@ main#typerhero section.sec-play article.info aside span {
 }
 
 main#typerhero section.sec-play .bg {
-	background-color: #04af71;
+   background: linear-gradient(#04af71, #04af7133);
 }
 
 
@@ -379,4 +378,32 @@ main#typerhero section.sec-play .words span{
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
+}
+
+main#typerhero section.sec-play div.starship {
+   height: 97px;
+   width: 60px;
+   position: absolute;
+   left: 174px;
+   top: 300px;
+   transition: all 0.1s linear;
+   animation: 0.2s animStarShip ease-in infinite;
+   z-index: 9;
+}
+main#typerhero section.sec-play div.starship div.structure {
+   background: url(../images/starship-steps.png) no-repeat;
+   height: 97px;
+   width: 60px;
+   animation: animStepsStarShip 0.1s steps(3) infinite;
+}
+@keyframes animStepsStarShip {
+   100% { background-position: -180px; }
+}
+@keyframes animStarShip {
+   0%, 100% {
+         top: 300px;
+   }
+   50% {
+         top: 296px;
+   }
 }
