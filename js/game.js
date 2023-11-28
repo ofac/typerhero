@@ -6,7 +6,9 @@ var points = 0;
 var spans;
 var typed;
 var seconds = 60;
-var spark = new Audio("../sounds/explosion-small.mp3");
+var spark   = new Audio("../sounds/explosion-small.mp3");
+var bgmusic = new Audio("../sounds/bg-music.mp3");
+
 var timer = null;
 var laser = document.querySelector('.laser');
 
@@ -19,7 +21,7 @@ var laser = document.querySelector('.laser');
     			//alert("El tiempo ha terminado! Palabras por minuto " + points);
     			//scoreDiv.innerHTML = "0";
           words.classList.add('message')
-    			words.innerHTML = "<strong>" + $username + "!</strong><br>El tiempo ha terminado! <br> Palabras por minuto: " + points;
+    			words.innerHTML = "<strong>" + $username + "!</strong><br>El tiempo ha terminado! <br> Palabras por minuto: <strong>" + points + "</strong>";
     			clearInterval(timer);
     			seconds = 60;
     			timerDiv.innerHTML = "0";

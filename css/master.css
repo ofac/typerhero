@@ -36,7 +36,7 @@ main#typerhero div.stars-sm {
 
 @keyframes parallax {
    0% { background-position: 0px -2048px; }
-   100% { background-position: 0px 0px;    }
+   100% { background-position: 0px 0px;   }
 }
 
 main#typerhero div.logo {

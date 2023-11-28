@@ -43,6 +43,10 @@ $(document).ready(function () {
                                  .addClass('animate__fadeOutDown')
                     setTimeout(() => {
                         $username = $('#username').val()
+                        bgmusic.pause()
+                        bgmusic.currentTime = 0
+                        bgmusic.play()
+                        bgmusic.volume = 0.05
                         countdown()
   		                random()
                         $('.stage-play').removeClass('hide')
