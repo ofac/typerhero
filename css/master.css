@@ -189,6 +189,11 @@ main#typerhero nav.menu ul li.opt11 a:is(:link, :visited) {
    background-color: #088f82;
 }
 
+main#typerhero nav.menu ul li.opt11.disabled a:is(:link, :visited) {
+   opacity: .2;
+   pointer-events: none;
+}
+
 main#typerhero nav.menu ul li.opt11 a i {
    background: url(../images/ico-play.svg);
 }
@@ -361,16 +366,15 @@ main#typerhero section.sec-play article.info aside {
    align-items: center;
 }
 
-main#typerhero section.sec-play article.info aside span {
-   font-weight: 100;
-}
 
 main#typerhero section.sec-play .bg {
-   background: linear-gradient(#04af71, #04af7133);
+   /*background: linear-gradient(#04af71, #04af7133);*/
+   color: #04af71;
+   text-shadow: #04af71 1px 0 10px;
 }
 
 main#typerhero section.sec-play .laser {
-   background-color: #04af71;
+   background-color: #88dbbd;
    border-radius: 20px;
    height: 10px;
    top: 286px;
@@ -393,15 +397,54 @@ main#typerhero section.sec-play .wordsWrap {
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-top: 60px;
+   margin-top: 40px;
 }
 
-main#typerhero section.sec-play .words span{
+main#typerhero section.sec-play .wordsWrap p.words {
     font-size: 50px;
     font-weight: 400;
     letter-spacing: 1px;
+    margin-top: 10px;
     color: #fff;
 }
+
+
+main#typerhero section.sec-play .wordsWrap p.words.message {
+   font-size: 22px;
+   font-weight: 100;
+   text-align: center;
+   margin-top: 20px;
+   color: #fff;
+}
+
+main#typerhero section.sec-play .wordsWrap p.words.message strong {
+   color: #2b5770;
+   text-transform: uppercase;
+   font-size: 28px;
+}
+
+main#typerhero section.sec-play aside span{
+   font-size: 28px;
+   font-weight: 400;
+   letter-spacing: 1px;
+   margin-top: 50px;
+   color: #fff;
+   opacity: .5;
+}
+
+main#typerhero section.sec-play aside {
+   height: 100px;
+   width: 70px;
+}
+
+main#typerhero section.sec-play aside.info-words {
+   background: url(../images/ico-words.svg);
+}
+
+main#typerhero section.sec-play aside.info-time {
+   background: url(../images/ico-time.svg);
+}
+
 
 main#typerhero section.sec-play div.starship {
    height: 97px;

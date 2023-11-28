@@ -16,12 +16,13 @@ var laser = document.querySelector('.laser');
     		seconds--;
     		temp.innerHTML = seconds;
     		if (seconds === 0) {
-    			alert("El tiempo ha terminado! Palabras por minuto " + points);
-    			scoreDiv.innerHTML = "0";
-    			words.innerHTML = "";
+    			//alert("El tiempo ha terminado! Palabras por minuto " + points);
+    			//scoreDiv.innerHTML = "0";
+          words.classList.add('message')
+    			words.innerHTML = "<strong>" + $username + "!</strong><br>El tiempo ha terminado! <br> Palabras por minuto: " + points;
     			clearInterval(timer);
     			seconds = 60;
-    			timerDiv.innerHTML = "60";
+    			timerDiv.innerHTML = "0";
     		}
  		}, 1000);
   	}

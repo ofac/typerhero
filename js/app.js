@@ -1,4 +1,15 @@
 $(document).ready(function () {
+
+
+    $('.stage02').on('input', '#username', function () {
+        if($(this).val().length >= 4) {
+            $('.opt11').removeClass('disabled')
+        } else {
+            $('.opt11').addClass('disabled')
+        }
+    })
+
+
     $('.menu a').click(function (e) { 
         e.preventDefault()
         $opt = $(this).parent().attr('class')
@@ -31,8 +42,9 @@ $(document).ready(function () {
                     $('.stage02').removeClass('animate__fadeInUp')
                                  .addClass('animate__fadeOutDown')
                     setTimeout(() => {
-                        countdown();
-  		                random();
+                        $username = $('#username').val()
+                        countdown()
+  		                random()
                         $('.stage-play').removeClass('hide')
                                         .addClass('animate__fadeInUp')
                     }, 200)
@@ -132,7 +144,11 @@ $(document).ready(function () {
                 break;
 
             case 'back-exit':
+                $username = ''
+                $('#username').val('')
+                $('.opt11').addClass('disabled')
                 scoreDiv.innerHTML = "0"
+                words.classList.remove('message')
                 words.innerHTML = ""
                 clearInterval(timer)
                 seconds = 60
