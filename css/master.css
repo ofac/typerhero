@@ -384,7 +384,7 @@ main#typerhero section.sec-play .laser {
 }
 
 main#typerhero section.sec-play .laser.shoot {
-   animation: 0.4s animShoot ease-in 1;
+   animation: 0.2s animShoot ease-in 1;
 }
 
 @keyframes animShoot {
@@ -401,7 +401,7 @@ main#typerhero section.sec-play .wordsWrap {
 }
 
 main#typerhero section.sec-play .wordsWrap p.words {
-    font-size: 50px;
+    font-size: 44px;
     font-weight: 400;
     letter-spacing: 1px;
     margin-top: 10px;
@@ -410,15 +410,26 @@ main#typerhero section.sec-play .wordsWrap p.words {
 
 
 main#typerhero section.sec-play .wordsWrap p.words.message {
+   background: #00000099;
+   border-radius: 10px;
+   color: #fff;
    font-size: 22px;
    font-weight: 100;
    text-align: center;
-   margin-top: 20px;
-   color: #fff;
+   margin-top: 10px;
+   padding: 10px;
+   animation: 1.4s animMessage ease-in infinite;
+}
+
+@keyframes animMessage {
+   0%   { transform: scale(1); }
+   50%  { transform: scale(1.2); }
+   100% { transform: scale(1); }
+
 }
 
 main#typerhero section.sec-play .wordsWrap p.words.message strong {
-   color: #2b5770;
+   color: #088F82;
    text-transform: uppercase;
    font-size: 28px;
 }
@@ -472,14 +483,4 @@ main#typerhero section.sec-play div.starship div.structure {
    50% {
          top: 296px;
    }
-}
-
-main#typerhero section.sec-play input {
-   border-radius: 10px;
-   position: absolute;
-   border: 2px solid #fff;
-   background-color: transparent;
-   top: 320px;
-   padding: 20px;
-   width: 20px;
 }
